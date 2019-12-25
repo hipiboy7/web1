@@ -6,49 +6,74 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="colors.js"></script>
   <link rel="stylesheet" href="index_style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/DividendUP.css">
 </head>
 <body>
-  <div id="one-KDP" class = "show-element">
-    <header class="gb_sa gb_Za gb_Pe gb_Cc" id="gb" role="banner" style="background-color:transparent">
-      <div class="gb_7d">
-        <div></div>
+  <style type="text/css">
+    .jumbotron{
+      background-image: url('images/dividend.jpg');
+      background-size: cover;
+      text-shadow: black 0.2em 0.2em 0.2em; 
+      color:powderblue;
+    }
+  </style>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed"
+        data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">DividendUP</a>
       </div>
-    </header>
-  </div>
+      <div class="collapse navbar-collapse" id=bs-example-navbar-collapse-1>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">인기 배당주 <span class="sr-only"></span></a></li>
+          <li><a href="#">고배당주</a></li>
+          <li><a href="#">배당성장주</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Screener <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">시가배당률</a></li>
+              <li><a href="#">국채시가배당률</a></li>
+              <li><a href="#">배당락회복탄력성</a></li>
+            </ul>            
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="내용을 입력하세요.">
+          </div>
+          <button type="submit" class="btn btn-default">검색</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">접속하기 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+            </ul>            
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
 
-  <div id="logo-KDP">
-    <h1><a href="index.html">Korea Dividned Platform</a></h1>
-  </div>
-
-  <div id="fakebox-container">
-    <div id="fakebox" style="weight:561px; height:44px">
-      <div id="fakebox-text">기업 또는 배당주 입력</div>
-      <div id="fakebox-input" ><input autocomplete"off" tabindex="-1" type="url" aria-hidden="true">
-      </div>
-      <div id="fakebox-search"><button class="search" title="검색버튼">검색</button>
-      </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="text-center">Korea Dividend Platform</h1>
+      <p class="text-center">대한민국 배당주 정보 플랫폼입니다.</p>
+      <p class="text-center"><a class="btn btn-primary btn-lg" href="#" role=button">배당주 검색</a></p>
     </div>
   </div>
 
-  <div id="des_container1">
-    <div></div>
-    <div>
-      <div id="des">
-        <div><h2>배당주란?</h2></div>
-        <input id="night_day" type="button" value="night" onclick="
-        nightDayHandler(this);">
-        <div></div>
-      </div>
-      <p>배당을 주는 주식을 의미한다.</p>
-      <p>아쉽게도 대한민국에서는 배당이 보편화되어있지 않다.</p>
-      <p>다행이도 시간이 지남에 따라 주주들이 기업에 주주가치 제고를 위해 목소리를 내고 있다.</p>
-      <p>대한민국에서 배당을 하는 기업 또는 주식은 보통 연 1회 배당하고, 소수의 기업들만 반기 배당을 한다.</p>
-      <p>분기 배당을 실시하고 있는 유일한 기업은 유가증권시장(코스피) 1위 기업 삼성전자 뿐이다.</p>
-      <p>미국에서는 많은 기업들이 분기배당(매 3개월)을 하고 있으며, 심지어 월배당을 하는 기업도 있다.</p>
-      <p>장기 투자자들이 선호하기 때문에 무배당주보다 거래량이 적다.</p>
-      <p>시가 배당률이 10%를 넘으면 고배당주로 평가받는다.</p>
-    </div>
-    <div></div>
-</div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
 </html>

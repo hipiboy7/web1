@@ -5,6 +5,26 @@
 /* border-width: 5px;
 border-color: red;
 border-style: solid; */
+@media(max-width:800px){
+  .temp{
+    display:none;
+  }
+  #temp2{
+    text-align: center;
+    border-width: 5px;
+    border-color: red;
+    border-style: solid;
+  }
+  #des_container1{
+    display: inline;
+  }
+}
+
+.temp{
+  border-width: 5px;
+  border-color: red;
+  border-style: solid;
+}
 
 a{
   text-decoration: none;
@@ -56,6 +76,10 @@ h2{
 #des_container1{
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+
+  border-width: 5px;
+  border-color: red;
+  border-style: solid;
 }
 #des{
   display: grid;
