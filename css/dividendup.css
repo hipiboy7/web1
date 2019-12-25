@@ -62,6 +62,14 @@ a:hover {
 	.navbar-default .navbar-nav .open .dropdown-menu >li >a:focus{
 	color: #bbbbbb;
 	}
-
-
 }
+
+
+#index_search_btn{
+	background-color: #ffffff;
+	color:black;
+}
+#index_input_container{
+	text-align: center;
+}
+
